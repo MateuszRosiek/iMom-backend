@@ -1,0 +1,53 @@
+INSERT INTO users(username, email) VALUES ('UserName', 'UserEmail')
+INSERT INTO users(username, email) VALUES ('NameUser', 'UserEmail1')
+INSERT INTO roles(name) VALUES('ROLE_USER')
+INSERT INTO diaries(user_id, description, date) VALUES (1, 'Test Description', '2019-04-03')
+INSERT INTO diaries(user_id, description, date) VALUES (1, 'Test Description 2', '2019-04-03')
+INSERT INTO forum_questions(user_id, question_title, question, category, date) VALUES (1, 'Test Title', 'Test Question', 'Test Category', '2019-04-03')
+INSERT INTO forum_questions(user_id, question_title, question, category, date) VALUES (1, 'Test Title-2', 'Test Question-2', 'Test Category-2', '2010-02-01')
+
+INSERT INTO forum_answers(user_id, question_id, answer, date) VALUES (1, 1, 'Test Answer', '2021-04-25')
+INSERT INTO forum_answers(user_id, question_id, answer, date) VALUES (1, 1, 'Test Answer2', '2021-04-26')
+INSERT INTO pregnancy_info(user_id, number_of_children, due_date, kicks_count, status) VALUES (1, 1, 01012020, 2, true)
+INSERT INTO weights_during_pregnancy(pregnancy_info_id, date, weight) VALUES (1, '2021-04-25', 60)
+INSERT INTO tasks_after_birth(user_id, task_status, task_name, task_text) VALUES (1, false, 'Test Task Name', 'Test Task Text')
+
+INSERT INTO tasks_before_birth(user_id, task_status, task_name, task_text) VALUES (1, false, 'Test Task Name', 'Test Task Text')
+INSERT INTO tasks_before_birth(user_id, task_status, task_name, task_text) VALUES (1, true, 'Test Task Name-2', 'Test Task Text-2')
+
+INSERT INTO kids(parent_id, first_name, last_name, sex, birth_date, weight, height) VALUES (1, 'Test Name', 'Test Last Name', 'Male', 01012020, 3, 50)
+INSERT INTO feedings(user_id, kid_id, date, feeding_type, time, quantity) VALUES (1, 1, 01012000, 'Bottle', 0900, 100)
+INSERT INTO tips(title, text, date) VALUES ('Tip Test Title 1', 'Tip Test Text 1', '2021-04-25')
+INSERT INTO tips(title, text, date) VALUES ('Tip Test Title 2', 'Tip Test Text 2', '2021-04-26')
+
+INSERT INTO question_likes(user_id, question_id, value) VALUES (1, 1, true)
+INSERT INTO question_likes(user_id, question_id, value) VALUES (2, 2, false)
+INSERT INTO answer_likes(user_id, answer_id, value) VALUES (1, 1, true)
+INSERT INTO answer_likes(user_id, answer_id, value) VALUES (2, 2, false)
+
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Burger', 'Insert meat between bread', 'Lunch', 'Monday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Spaghetti', 'Mix pasta with sauce in a blender', 'Lunch', 'Tuesday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Oatmeal', 'Mix Oat with milk', 'Breakfast', 'Wednesday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Toast', 'Bread + cheese + ham', 'Breakfast', 'Monday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Kabanos', 'Just open and fruu', 'Supper', 'Friday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Scrumbled Eggs', 'Scrumble and pan', 'Breakfast', 'Tuesday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Big Burger', 'Insert big meat between bread', 'Lunch', 'Sunday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Burger', 'Insert meat between bread', 'Lunch', 'Sunday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Spaghetti', 'Mix pasta with sauce in a blender', 'Lunch', 'Saturday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Oatmeal', 'Mix Oat with milk', 'Breakfast', 'Friday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Kabanos', 'Just open and fruu', '2nd Breakfast', 'Wednesday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Scrumbled Eggs', 'Scrumble and pan', 'Breakfast', 'Monday')
+INSERT INTO food(recipe_name, recipe_text, meal_time, day) VALUES ('Big Burger', 'Insert big meat between bread', 'Dinner', 'Monday')
+
+
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł Mamy', 'Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum', 'Mom', '2021-05-01')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł taty', 'I jakiś tekst znowu', 'Dad', '2021-05-02')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł dziecka', 'Co by tu zbroić', 'Child', '2021-05-03')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł dziecka drugi', 'Co by tu zbroić', 'Child', '2021-05-04')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł dziecka trzeci', 'Co by tu zbroić', 'Child', '2021-05-04')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł taty kolejny', 'I jakiś tekst znowu', 'Dad', '2021-05-05')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł o domu jeden', 'I jakiś tekst znowu', 'Home', '2021-05-06')
+INSERT INTO blog_articles(title, text, category, date) VALUES ('Artykuł mamy najważniejszy', 'Wiadomo, że mama jest najlepsza', 'Mom', '2021-05-07')
+
+
+INSERT INTO contractions(date_time, duration, pregnancy_info_id) VALUES ('Wednesday 00:04', 0.5, 1)
